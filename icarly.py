@@ -21,11 +21,13 @@ async def on_ready():
     for guild in client.guilds:
         if guild.name == GUILD:
             break
-    print(f'{client.user} has connected to Discord!'
-           f'{guild.name}(id: {guild.id})')
-
-    members = '\n - '.join([member.name for member in guild.members])
+    print(
+        f'{client.user} has connected to Discord!\n'
+        f'{guild.name}(id: {guild.id})'
+    )
+         
+    member_objs = await guild.fetch_members(limit=None).flatten()
+    members = '\n - '.join([member.name for member in  member_objs])
     print(f'Guild Members:\n - {members}')
-    print(f'test')
 
 client.run(TOKEN)
