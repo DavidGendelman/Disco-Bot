@@ -1,10 +1,10 @@
-# icarly.py
-##Author: Eduard Varshavsky, David Gendelman
-##File Name: icarly.py
-##Program Name: icarly.py
-##Creation Date: August 2nd, 2021
-##Modified Date: August 3rd, 2021
-##Description: Discord bot for discord
+# main.py
+## Author: Eduard Varshavsky, David Gendelman
+## File Name: main.py
+## Program Name: main
+## Creation Date: August 2nd, 2021
+## Modified Date: August 07, 2021
+## Description: Discord bot for discord
 
 import os
 
